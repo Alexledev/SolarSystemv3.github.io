@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🔮🏐Solar system project🔮🏐</title>
+
+        <style>
+
+            :root{
+                --neprot-translator:-360px;
+                --uranusrot-translator:-401px;
+                --satrot-translator: -351px;
+                --juprot-translator: -301px;
+                --marsrot-translator: -251px;
+                --earthrot-translator: -201px;
+                --venrot-translator: -151px;
+                --mercrot-translator: -101px;
+
+            }
+            div#universe {
+                background-image:url("Background.jpg");
+                width: 1500px;
+                height:1000px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                margin: 0 auto;
+            }
+            body {
+                align-content: center;
+                background: dimgray;
+                
+
+            }
+
+            h1 {
+                font-family: italic;
+                font-weight:bold;
+
+            }
+
+            
+
+            div#sun{
+                width: 100px;
+                height: 100px;              
+                border-radius: 50%;
+               
+                position: absolute;
+               
+                text-align:center;
+                color: black;
+                background:orange;
+                box-shadow: 0 0 10px orange, 0 0 60px orange, 0 0 200px yellow, inset 0 0 80px yellow;
+                z-index: 10000;
+                display: none;
+            }
+            
+            
+            @keyframes Mercrot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--mercrot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--mercrot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            @keyframes Venrot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--venrot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--venrot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            
+
+            @keyframes Earthrot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--earthrot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--earthrot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            @keyframes Marsrot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--marsrot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--marsrot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+
+            @keyframes Juprot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--juprot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--juprot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            @keyframes Satrot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--satrot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--satrot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            @keyframes Uranusrot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--uranusrot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--uranusrot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            @keyframes Neprot {
+                from {
+                    transform: rotate(0deg)
+                            translate(var(--neprot-translator))
+                            rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg)
+                            translate(var(--neprot-translator)) 
+                            rotate(-360deg);
+                }
+            }
+            table {
+                border: 3px lightblue;
+                background-color: rgb(92, 154, 190);
+                color:rgb(214, 206, 93);
+                border-collapse: collapse;
+                
+                
+            } 
+            
+
+
+            td {
+                font-size: 20px;
+
+            }
+            th {
+                font-weight:bold;
+                font-size: 25px;
+            }
+
+            a {
+            border: 2px blue
+         }
+           
+        </style>
+    </head>
+    <body>
+        <h1>Solar System</h1>
+        
+        <div id="universe">
+           <button onclick="myFunction()">Turn Off/On the table below</button>
+            <div id="g1">
+
+                <table border="3px">
+                    <thead>
+    
+                        <tr>
+                                <th>Order</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>    <td>0</td>
+                                    <td><a href="https://en.wikipedia.org/wiki/Sun" target="_blank"><img src="sun.jpg" style = "width:60px; height:50px"></a></td>
+                                    <td>Sun</td>
+                                    
+                            </tr>
+                            <tr>
+                                    <td>1</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank"><img src="Mercury.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Mercury</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>2</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Venus" target="_blank"><img src="2k_venus_surface.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Venus</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>3</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Earth" target="_blank"><img src="Earth_map2.PNG" style = "width:60px; height:50px"></a></td>
+                                <td>Earth</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>4</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Mars" target="_blank"><img src="mars.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Mars</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>5</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank"><img src="jup.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Jupiter</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>6</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Saturn" target="_blank"><img src="sat.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Saturn</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>7</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Uranus" target="_blank"><img src="uranus.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Uranus</td>
+                            </tr>
+                    
+                            <tr>
+                                    <td>8</td>
+                                <td><a href="https://en.wikipedia.org/wiki/Neptune" target="_blank"><img src="nep.jpg" style = "width:60px; height:50px"></a></td>
+                                <td>Neptune</td>
+                            </tr>
+                    </tbody>
+    
+    
+                    
+                </table> 
+            </div>
+                 
+            
+            
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("g1");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  } else {
+                    x.style.display = "none";
+                  }
+                }
+            </script>
+
+            <div id="sun">              
+                
+            </div>          
+
+        </div>
+    </body>
+    
+    <script src="orbits.js"></script>
+    <script src="Planets.js"></script>
+
+</html>
